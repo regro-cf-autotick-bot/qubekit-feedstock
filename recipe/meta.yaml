@@ -6,7 +6,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://github.com/qubekit/QUBEKit/archive/v.{{ version }}.tar.gz
+  url: https://github.com/qubekit/QUBEKit/archive/{{ version }}.tar.gz
   sha256: f9f2be362f1f8db2262cc8a4ae46c6f4b9ec487727850cf3a1899c54d5b7e59a
 
 
