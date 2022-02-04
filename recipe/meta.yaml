@@ -43,7 +43,7 @@ requirements:
 
 test:
   imports:
-    - QUBEKit
+    - qubekit
   requires:
     - rdkit
   commands:
