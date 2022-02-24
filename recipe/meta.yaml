@@ -1,5 +1,5 @@
 {% set name = "qubekit" %}
-{% set version = "2.1.0" %}
+{% set version = "2.1.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/qubekit/QUBEKit/archive/{{ version }}.tar.gz
-  sha256: f9f2be362f1f8db2262cc8a4ae46c6f4b9ec487727850cf3a1899c54d5b7e59a
+  sha256: ace229c5ad724bcbab566d3a858c4712543d77dfbea86412dd5a9e6b8ce72f91
 
 
 build:
@@ -39,6 +39,7 @@ requirements:
     - tqdm
     - openff-toolkit-base >=0.10.0
     - forcebalance
+    - xtb-python
 
 
 test:
