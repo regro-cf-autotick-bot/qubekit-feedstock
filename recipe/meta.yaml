@@ -15,16 +15,16 @@ build:
     - QUBEKit = qubekit.cli.cli:cli
     - qubekit = qubekit.cli.cli:cli
     - QUBEKit-pro = qubekit.proteins.protein_run:main
-  number: 0
+  number: 1
   noarch: python
   script: "{{ PYTHON }} -m pip install . -vv"
 
 requirements:
   host:
-    - python >=3.6
+    - python {{ python_min }}
     - pip
   run:
-    - python >=3.6
+    - python >={{ python_min }}
     - numpy >=1.18.1
     - scipy
     - rdkit
@@ -47,6 +47,7 @@ test:
     - qubekit
   requires:
     - rdkit
+    - python {{ python_min }}
   commands:
     - qubekit --help
 
